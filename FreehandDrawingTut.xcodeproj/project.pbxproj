@@ -18,6 +18,10 @@
 		240B4A65166911E3005E640C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 240B4A64166911E3005E640C /* Default-568h@2x.png */; };
 		240B4A68166911E3005E640C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240B4A66166911E3005E640C /* MainStoryboard.storyboard */; };
 		240B4A6B166911E3005E640C /* DCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A6A166911E3005E640C /* DCViewController.m */; };
+		240B4A7316691288005E640C /* LinearInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A7216691288005E640C /* LinearInterpView.m */; };
+		240B4A7A16691D83005E640C /* CachedLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A7916691D83005E640C /* CachedLIView.m */; };
+		240B4A7D166921E4005E640C /* BezierInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A7C166921E4005E640C /* BezierInterpView.m */; };
+		240B4A80166926EA005E640C /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A7F166926EA005E640C /* SmoothedBIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		240B4A67166911E3005E640C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		240B4A69166911E3005E640C /* DCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCViewController.h; sourceTree = "<group>"; };
 		240B4A6A166911E3005E640C /* DCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCViewController.m; sourceTree = "<group>"; };
+		240B4A7116691288005E640C /* LinearInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearInterpView.h; sourceTree = "<group>"; };
+		240B4A7216691288005E640C /* LinearInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearInterpView.m; sourceTree = "<group>"; };
+		240B4A7816691D83005E640C /* CachedLIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedLIView.h; sourceTree = "<group>"; };
+		240B4A7916691D83005E640C /* CachedLIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedLIView.m; sourceTree = "<group>"; };
+		240B4A7B166921E4005E640C /* BezierInterpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierInterpView.h; sourceTree = "<group>"; };
+		240B4A7C166921E4005E640C /* BezierInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierInterpView.m; sourceTree = "<group>"; };
+		240B4A7E166926E9005E640C /* SmoothedBIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothedBIView.h; sourceTree = "<group>"; };
+		240B4A7F166926EA005E640C /* SmoothedBIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothedBIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +95,17 @@
 		240B4A54166911E3005E640C /* FreehandDrawingTut */ = {
 			isa = PBXGroup;
 			children = (
+				240B4A7116691288005E640C /* LinearInterpView.h */,
+				240B4A7216691288005E640C /* LinearInterpView.m */,
+				240B4A7816691D83005E640C /* CachedLIView.h */,
+				240B4A7916691D83005E640C /* CachedLIView.m */,
+				240B4A7B166921E4005E640C /* BezierInterpView.h */,
+				240B4A7C166921E4005E640C /* BezierInterpView.m */,
 				240B4A5D166911E3005E640C /* DCAppDelegate.h */,
 				240B4A5E166911E3005E640C /* DCAppDelegate.m */,
 				240B4A66166911E3005E640C /* MainStoryboard.storyboard */,
+				240B4A7E166926E9005E640C /* SmoothedBIView.h */,
+				240B4A7F166926EA005E640C /* SmoothedBIView.m */,
 				240B4A69166911E3005E640C /* DCViewController.h */,
 				240B4A6A166911E3005E640C /* DCViewController.m */,
 				240B4A55166911E3005E640C /* Supporting Files */,
@@ -177,6 +197,10 @@
 				240B4A5B166911E3005E640C /* main.m in Sources */,
 				240B4A5F166911E3005E640C /* DCAppDelegate.m in Sources */,
 				240B4A6B166911E3005E640C /* DCViewController.m in Sources */,
+				240B4A7316691288005E640C /* LinearInterpView.m in Sources */,
+				240B4A7A16691D83005E640C /* CachedLIView.m in Sources */,
+				240B4A7D166921E4005E640C /* BezierInterpView.m in Sources */,
+				240B4A80166926EA005E640C /* SmoothedBIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +284,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FreehandDrawingTut/FreehandDrawingTut-Prefix.pch";
 				INFOPLIST_FILE = "FreehandDrawingTut/FreehandDrawingTut-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -271,6 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FreehandDrawingTut/FreehandDrawingTut-Prefix.pch";
 				INFOPLIST_FILE = "FreehandDrawingTut/FreehandDrawingTut-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
