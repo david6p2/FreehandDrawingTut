@@ -5,7 +5,7 @@
 //  Created by David Cespedes on 30/11/12.
 //  Copyright (c) 2012 LSR Marketing Service. All rights reserved.
 //
-
+/*
 #import "CachedLIView.h"
 @implementation CachedLIView
 {
@@ -23,6 +23,7 @@
     {
         [self setMultipleTouchEnabled:NO];
         [self setBackgroundColor:[UIColor whiteColor]];
+        //[[UIColor redColor] setStroke];
         path = [UIBezierPath bezierPath];
         [path setLineWidth:25.0];
         [path setLineCapStyle:kCGLineCapRound];
@@ -53,6 +54,7 @@
         //NSLog(@"Red");
         [[UIColor redColor] setStroke];
     }
+    [[UIColor redColor] setStroke];
     [path stroke];
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -130,3 +132,5 @@
     
 }
 @end
+ 
+ */

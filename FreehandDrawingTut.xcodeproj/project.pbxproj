@@ -22,6 +22,7 @@
 		240B4A7A16691D83005E640C /* CachedLIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A7916691D83005E640C /* CachedLIView.m */; };
 		240B4A7D166921E4005E640C /* BezierInterpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A7C166921E4005E640C /* BezierInterpView.m */; };
 		240B4A80166926EA005E640C /* SmoothedBIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A7F166926EA005E640C /* SmoothedBIView.m */; };
+		240B4A8716698550005E640C /* CachedLIViewOrginal.m in Sources */ = {isa = PBXBuildFile; fileRef = 240B4A861669854F005E640C /* CachedLIViewOrginal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		240B4A7C166921E4005E640C /* BezierInterpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierInterpView.m; sourceTree = "<group>"; };
 		240B4A7E166926E9005E640C /* SmoothedBIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmoothedBIView.h; sourceTree = "<group>"; };
 		240B4A7F166926EA005E640C /* SmoothedBIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmoothedBIView.m; sourceTree = "<group>"; };
+		240B4A851669854F005E640C /* CachedLIViewOrginal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedLIViewOrginal.h; sourceTree = "<group>"; };
+		240B4A861669854F005E640C /* CachedLIViewOrginal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedLIViewOrginal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				240B4A7216691288005E640C /* LinearInterpView.m */,
 				240B4A7816691D83005E640C /* CachedLIView.h */,
 				240B4A7916691D83005E640C /* CachedLIView.m */,
+				240B4A851669854F005E640C /* CachedLIViewOrginal.h */,
+				240B4A861669854F005E640C /* CachedLIViewOrginal.m */,
 				240B4A7B166921E4005E640C /* BezierInterpView.h */,
 				240B4A7C166921E4005E640C /* BezierInterpView.m */,
 				240B4A5D166911E3005E640C /* DCAppDelegate.h */,
@@ -201,6 +206,7 @@
 				240B4A7A16691D83005E640C /* CachedLIView.m in Sources */,
 				240B4A7D166921E4005E640C /* BezierInterpView.m in Sources */,
 				240B4A80166926EA005E640C /* SmoothedBIView.m in Sources */,
+				240B4A8716698550005E640C /* CachedLIViewOrginal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
