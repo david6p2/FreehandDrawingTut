@@ -11,7 +11,6 @@
 @interface CachedLIView : UIView
 @property (strong, nonatomic) IBOutlet UILabel *cordenates;
 @property (strong, nonatomic) IBOutlet UIButton *eraseButton;
-@property (strong, nonatomic) IBOutlet UILabel *letterLabel;
 - (IBAction)erasePathAction:(id)sender;
 
 
