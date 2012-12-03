@@ -59,10 +59,13 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint p = [touch locationInView:self];
+    /*
     if ((p.x > (lettersPoints[0].x-tolerance)) &&
         (p.x < (lettersPoints[0].x+tolerance)) &&
         (p.y > (lettersPoints[0].y-tolerance)) &&
         (p.y < (lettersPoints[0].y+tolerance)))
+     */
+    if ([self isTouch:p insideTolerance:tolerance ofPoint:lettersPoints[0]])
     {
         NSLog(@"Near Point");
         isLineCorrect = YES;
@@ -77,10 +80,7 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint p = [touch locationInView:self];
-    if ((p.x > (lettersPoints[0].x-tolerance)) &&
-        (p.x < (lettersPoints[0].x+tolerance)) &&
-        (p.y > (lettersPoints[0].y-tolerance)) &&
-        (p.y < (lettersPoints[0].y+tolerance)))
+    if ([self isTouch:p insideTolerance:tolerance ofPoint:lettersPoints[0]])
     {
         NSLog(@"Near Point");
         isLineCorrect = YES;
@@ -88,7 +88,10 @@
         isLineCorrect = NO;
     }
     [path addLineToPoint:p];
+    [self drawBitmap];
     [self setNeedsDisplay];
+    [path removeAllPoints];
+    [path moveToPoint:p];
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event // (2)
 {
@@ -103,6 +106,19 @@
 {
     [self touchesEnded:touches withEvent:event];
 }
+
+- (BOOL)isTouch:(CGPoint)touch insideTolerance:(float)theTolerance ofPoint:(CGPoint)testPoint{
+    BOOL isCorrect = NO;
+    float xDiference = touch.x-testPoint.x;
+    float yDiference = touch.y-testPoint.y;
+    float pointDistance = sqrtf(powf(xDiference, 2)+powf(yDiference, 2));
+    if (pointDistance<=tolerance) {
+        isCorrect = YES;
+    }
+    return isCorrect;
+}
+
+
 - (void)drawBitmap // (3)
 {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0.0);
